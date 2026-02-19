@@ -108,7 +108,7 @@ printf("Sum: %d\n", ssum);
 ```
 ---
 
-## ⚙️ How to Run
+## How to Run
 
 ```bash
 # 1. create input.txt
