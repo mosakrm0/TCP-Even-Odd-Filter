@@ -41,7 +41,7 @@ else {printf("Connection Failed\n");} //if failed
 
 
 // recive the sum and type from the server
-
+int sum = 0;
 char msg[50] = {0}; 
 
 read(sockfd, msg, 50); 
