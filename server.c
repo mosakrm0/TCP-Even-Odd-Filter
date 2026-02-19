@@ -47,8 +47,11 @@ sum = a+b+c;
 
 //send to client type and sum
 
+char name_buffer[50] = {0}; 
+strcpy(name_buffer, ame);
+send(cfd, name_buffer, 50, 0); 
+
 int ssum = htonl(sum);
-send(cfd, ame, strlen(ame), 0);
 send(cfd, &ssum, sizeof(ssum), 0);
 
 

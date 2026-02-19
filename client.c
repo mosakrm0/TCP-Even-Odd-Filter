@@ -41,11 +41,12 @@ else {printf("Connection Failed\n");} //if failed
 
 
 // recive the sum and type from the server
-char msg[100]; 
-int sum = 0;
 
-read(sockfd, msg, 100);
-recv(sockfd, &sum, sizeof(sum), 0);
+char msg[50] = {0}; 
+
+read(sockfd, msg, 50); 
+recv(sockfd, &sum, sizeof(sum), 0); 
+
 int ssum = ntohl(sum);
 printf("Name: %s\n", msg);
 printf("Sum: %d\n", ssum);
